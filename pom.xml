@@ -56,6 +56,7 @@
     <modules>
         <module>debezium-ai-bom</module>
         <module>debezium-embeddings-base</module>
+        <module>debezium-embeddings-minilm</module>
     </modules>
 
     <dependencyManagement>
