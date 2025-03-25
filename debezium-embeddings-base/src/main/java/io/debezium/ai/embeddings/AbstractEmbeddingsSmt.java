@@ -111,6 +111,11 @@ public abstract class AbstractEmbeddingsSmt<R extends ConnectRecord<R>> implemen
     public void close() {
     }
 
+    @Override
+    public String version() {
+        return "0.1";
+    }
+
     private void validateConfiguration() {
         if (sourceField.isBlank() || embeddingsField.isBlank()) {
             throw new ConfigException(format("Both '%s' and '%s' must be set to non-empty value.", TEXT_FIELD, EMBEDDGINS_FIELD));

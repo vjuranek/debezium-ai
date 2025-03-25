@@ -19,9 +19,4 @@ public class EmbeddingsMiniLmSmt<R extends ConnectRecord<R>> extends AbstractEmb
     public EmbeddingModel getModel() {
         return new AllMiniLmL6V2EmbeddingModel();
     }
-
-    @Override
-    public String version() {
-        return "0.1";
-    }
 }
